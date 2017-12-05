@@ -1,0 +1,21 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:unnamed-chunk-2}Iris regression table.}
+\begin{tabular}{lllll}
+\toprule
+Predictor & \multicolumn{1}{c}{$b$} & \multicolumn{1}{c}{95\% CI} & \multicolumn{1}{c}{$t(146)$} & \multicolumn{1}{c}{$p$}\\
+\midrule
+Intercept & 1.04 & \$[0.51\$, \$1.58]\$ & 3.85 & < .001\\
+Sepal Length & 0.61 & \$[0.48\$, \$0.73]\$ & 9.77 & < .001\\
+Petal Width & 0.56 & \$[0.32\$, \$0.80]\$ & 4.55 & < .001\\
+Petal Length & -0.59 & \$[-0.71\$, \$-0.46]\$ & -9.43 & < .001\\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 
