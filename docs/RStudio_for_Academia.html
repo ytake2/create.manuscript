@@ -309,6 +309,17 @@ output: rticles::elsevier_article
 <li>zoteroで管理している情報を抜き出して.bibを生成する方法はこちらを<a href="https://tclavelle.github.io/blog/reference_tips/">参照</a></li>
 </ul>
 <p>RefManageRでは, 文献管理ソフトではZoteroから, 論文検索サイトではPubmedから書誌情報をゲットして.bibファイルを生成できます。 Zoteroから生成する場合,ユーザIDとアクセスキーが必要になります。ウェブ上でzoteroのアカウントにログインするとsettingから確認できます。</p>
+<pre class="r"><code>library(RrefManageR)
+# zoteroから書誌情報を読み込む
+zotero&lt;-ReadZotero(user = &quot;ユーザID&quot;, .params = list(q = &quot;検索用語&quot;, 
+                                                          key = &quot;アクセスキー&quot;))
+
+# pubmedから情報を読み込む
+pubmed&lt;-ReadPubMed(&quot;検索用語&quot;, database = &quot;PubMed&quot;)
+
+# .bibファイルとして出力する
+WriteBib(zotero, file=&quot;zotero.bib&quot;,biblatex=T, verbose=F)                               
+WriteBib(pubmed,file = &quot;pubmed.bib&quot;, biblatex = T, verbose = F)</code></pre>
 </div>
 <div id=".bib" class="section level3">
 <h3>複数の.bibファイルを指定する</h3>

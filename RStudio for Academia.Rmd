@@ -195,7 +195,7 @@ RefManageRでは, 文献管理ソフトではZoteroから, 論文検索サイト
 Zoteroから生成する場合,ユーザIDとアクセスキーが必要になります。ウェブ上でzoteroのアカウントにログインするとsettingから確認できます。
 
 
-```{r, eval=F, echo=F}
+```{r, eval=F, echo=T}
 library(RrefManageR)
 # zoteroから書誌情報を読み込む
 zotero<-ReadZotero(user = "ユーザID", .params = list(q = "検索用語", 
