@@ -131,7 +131,7 @@ devtools::install_github("crsh/papaja")
 基本的にいじるのはrmdファイルのみで, 必要に応じて.bibファイルを調整します  
 
 
-```{r rticles, eval=F}
+```{r rticles, eval=F, echo=T}
 library(rticles)
 library(rmarkdown)
 rmarkdown::draft("draft1", template = "elsevier_article", package = "rticles")
